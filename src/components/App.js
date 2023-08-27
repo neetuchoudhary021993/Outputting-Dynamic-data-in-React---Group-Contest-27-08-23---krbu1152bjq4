@@ -1,11 +1,12 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState } from 'react';
 import '../styles/App.css';
+
 const App = () => {
-    const [name, setName] = useState('');
+  const [name, setName] = useState('');
+  const [displayText, setDisplayText] = useState(''); // State to store the display text
 
   const handleButtonClick = () => {
-    const textPara = document.getElementById('text');
-    textPara.textContent = `Hello my name is ${name} and I study at Newton School`;
+    setDisplayText(`Hello my name is ${name} and I study at Newton School`);
   };
 
   return (
@@ -17,8 +18,11 @@ const App = () => {
         }}
       />
       <button id='button' onClick={handleButtonClick}>Click</button>
-      <p id='text'> Hello my name is ______ and I study at Newton School</p>
+      
+      <p id='text'>{displayText}</p>
     </div>
   );
 }
+
 export default App;
+
