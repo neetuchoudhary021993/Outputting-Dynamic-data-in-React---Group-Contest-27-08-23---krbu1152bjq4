@@ -44,7 +44,7 @@ const App = () => {
       <button id="button" onClick={final}> Click </button>
       <p id="text"> Hello my name is {name} and I study at Newton School</p>
     </div>
-  );
+  
 };
 
 export default App;
