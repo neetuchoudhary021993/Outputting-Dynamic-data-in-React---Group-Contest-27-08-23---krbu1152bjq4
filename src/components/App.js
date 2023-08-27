@@ -17,7 +17,7 @@ const App = () => {
         }}
       />
       <button id='button' onClick={handleButtonClick}>Click</button>
-      <p id='text'> Hello my name is {name} and I study at Newton School</p>
+      <p id='text'> Hello my name is ______ and I study at Newton School</p>
     </div>
   );
 }
