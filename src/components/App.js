@@ -12,14 +12,14 @@ const App = () => {
   return (
     <div id="main">
       <input
-        id='input'
+        id="input"
         onChange={(e) => {
           setName(e.target.value);
         }}
       />
-      <button id='button' onClick={handleButtonClick}>Click</button>
+      <button id="button" onClick={handleButtonClick}>Click</button>
       
-      <p id='text'>{displayText}</p>
+      <p id="text">{displayText}</p>
     </div>
   );
 }
