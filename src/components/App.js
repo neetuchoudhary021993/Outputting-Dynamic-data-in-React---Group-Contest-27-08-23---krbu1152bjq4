@@ -6,7 +6,7 @@ const App = () => {
   const [displayText, setDisplayText] = useState(''); // State to store the display text
 
   const handleButtonClick = () => {
-    setDisplayText(`Hello my name is ${name} and I study at Newton School`);
+    setDisplayText(` Hello my name is ${name} and I study at Newton School`);
   };
 
   return (
